@@ -1,0 +1,79 @@
+
+header {
+	border: solid black 1px;
+	overflow: auto;				/* Permet de conserver tous les éléments dans le block lorsque l'on rapetisse la fenêtre */
+}
+
+img {
+	height: 100px;
+	padding: 20px;
+}
+
+h1 {
+	line-height: 100px;
+	padding-right:10px;
+	float:right;
+	font-family: "Yatra One";
+}
+
+aside {
+	margin-top: 10px;
+}
+
+aside ul {
+	list-style-type: none;
+	border: solid black 1px;
+	margin-top: 0px;
+	padding-left:0px;
+	cursor:pointer;
+}
+
+aside ul li {
+	margin-left: 0px;
+	border-bottom: solid black 1px;
+	padding: 10px;
+}
+
+aside ul li:nth-child(3) {
+	border: none;
+}
+
+aside ul li:hover {
+	color:white;
+	background-color: black;
+	font-weight:bold;
+}
+
+aside {
+	float:left;
+	width:200px;
+}
+
+section {
+	border: solid black 1px;
+	padding: 10px;
+	margin-left: 210px;
+	margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	color:white;
+	background-color: gray;
+}
+
+td:nth-child(3n + 1) {
+	text-align: center;
+}

@@ -1,6 +1,7 @@
 
 header {
 	border: solid black 1px;
+	border-radius: 5px;
 	overflow: auto;				/* Permet de conserver tous les éléments dans le block lorsque l'on rapetisse la fenêtre */
 }
 
@@ -23,6 +24,7 @@ nav {
 nav ul {
 	list-style-type: none;
 	border: solid black 1px;
+	border-radius: 5px;
 	margin-top: 0px;
 	padding-left:0px;
 	cursor:pointer;
@@ -51,6 +53,7 @@ nav {
 
 section {
 	border: solid black 1px;
+	border-radius: 5px;
 	padding: 10px;
 	margin-left: 210px;
 	margin-top: 10px;

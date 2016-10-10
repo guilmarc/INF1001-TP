@@ -1,6 +1,7 @@
 
 header {
 	border: solid black 1px;
+	border-radius: 5px;
 	overflow: auto;				/* Permet de conserver tous les éléments dans le block lorsque l'on rapetisse la fenêtre */
 }
 
@@ -16,41 +17,40 @@ h1 {
 	font-family: "Yatra One";
 }
 
-aside {
+nav {
 	margin-top: 10px;
+	float:left;
+	width:200px;
 }
 
-aside ul {
+nav ul {
 	list-style-type: none;
 	border: solid black 1px;
+	border-radius: 5px;
 	margin-top: 0px;
 	padding-left:0px;
 	cursor:pointer;
 }
 
-aside ul li {
+nav ul li {
 	margin-left: 0px;
 	border-bottom: solid black 1px;
 	padding: 10px;
 }
 
-aside ul li:nth-child(3) {
+nav ul li:nth-child(3) {
 	border: none;
 }
 
-aside ul li:hover {
+nav ul li:hover {
 	color:white;
 	background-color: black;
 	font-weight:bold;
 }
 
-aside {
-	float:left;
-	width:200px;
-}
-
 section {
 	border: solid black 1px;
+	border-radius: 5px;
 	padding: 10px;
 	margin-left: 210px;
 	margin-top: 10px;

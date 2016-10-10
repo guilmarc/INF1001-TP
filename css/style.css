@@ -19,6 +19,8 @@ h1 {
 
 nav {
 	margin-top: 10px;
+	float:left;
+	width:200px;
 }
 
 nav ul {
@@ -44,11 +46,6 @@ nav ul li:hover {
 	color:white;
 	background-color: black;
 	font-weight:bold;
-}
-
-nav {
-	float:left;
-	width:200px;
 }
 
 section {

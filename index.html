@@ -5,6 +5,8 @@
     <title>TP1</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script type="application/javascript" src="./javascript/javascript.js"></script>
   </head>
 
   <body>
@@ -16,13 +18,13 @@
 
     <nav><!--Menu-->
     	<ul>
-	    	<li>Accueil</li>
-	    	<li>S'inscrire</li>
-	    	<li>Localiser une activité</li>
+	    	<li id="boutonAccueil">Accueil</li>
+	    	<li id="boutonInscription">S'inscrire</li>
+	    	<li id="boutonCarte">Localiser une activité</li>
     	</ul>
     </nav>
 
-    <section><!-- Contenu-->
+    <section id="accueil"><!-- Contenu-->
      	<h3>Notre but:</h3>
  		   <p>Notre site propose aux étudiants désireux de réaliser une ou plusieurs activités de loisir de rejoindre les différentes activités proposées dans la liste suivante en trois étapes:</p>
  		   	<ul>
@@ -78,7 +80,15 @@
 				
  		   </table>
 
-    	
     </section>
+  <section id="inscription" class="inactif">
+	<p id="test">inscription a completer</p>
+  </section>
+  <section id="carte" class="inactif">
+	  <p>carte a completer</p>
+  </section>
+
+
+
   </body>
 </html>

@@ -1,9 +1,8 @@
 window.onload = function() {
 
-    //alert("test");
-
 };
 
+// fonction qui cache la section visible
 $(document).ready(function animationMenu() {
 
     $('#boutonAccueil').click(function() {
@@ -14,7 +13,7 @@ $(document).ready(function animationMenu() {
 
     $('#boutonInscription').click(function(){
         $('section').filter(':visible').slideUp(500,function(){
-            $("#inscription").slideDown();
+            $("#inscription").show();
         });
     });
 

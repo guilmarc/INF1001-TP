@@ -1,9 +1,8 @@
 window.onload = function() {
 
-    //alert("test");
-
 };
 
+// fonction qui cache la section visible
 $(document).ready(function animationMenu() {
 
     $('#boutonAccueil').click(function() {

@@ -1,7 +1,5 @@
 window.onload = function() {
 
-    //alert("test");
-    // remplit le tableau pour la première fois à l'ouverture de la page
     remplirTableau("#");
 
 };

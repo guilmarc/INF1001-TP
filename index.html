@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="application/javascript" src="javascript/menu.js"></script>
 	<script type="application/javascript" src="./javascript/tableau.js"></script>
+	<script type="application/javascript" src="./javascript/formulaire.js"></script>
 </head>
 
 <body><!-- page content -->
@@ -81,12 +82,61 @@
 		</table>
 	</section>
 
-	<section id="inscription" class="inactif">
-		<p id="test">inscription a completer</p>
+
+	<section id="inscription" class="inactif"> <!-- section contenant l'inscription-->
+		<h3>Inscrivez-vous</h3>
+
+		<form method="post" onsubmit="return false" >
+
+			<div>
+				<label>Nom</label>
+				<input type="text" name="lastname"/>
+			</div>
+
+			<div>
+				<label>Prénom</label>
+				<input type="text" name="firstname" />
+			</div>
+
+			<div>
+				<label>Date de naissance</label>
+				<input type="text" name="ddn" placeholder ="aaaa-mm-jj"/>
+			</div>
+
+			<div>
+				<label>Sexe : </label>
+				<input type="radio" name="sex" checked="checked" value="male"/>Homme
+				<input type="radio" name="sex" value="female"/> Femme
+			</div>
+
+			<div>
+				<label>Activité : </label>
+				<select name="activite">
+					<option value="badminton">Badminton</option>
+					<option value="echecs">Échecs</option>
+					<option value="kayak">Kayak</option>
+					<option value="natation">Natation</option>
+					<option value="randonnee">Randonnée</option>
+					<option value="velo">Vélo</option>
+				</select>
+			</div>
+
+			<div>
+				<label id="motiv">Motivation :</label>
+				<textarea rows="8" cols="50" name="motivation" ></textarea>
+			</div>
+
+		</form>
+
 	</section>
 
 	<section id="carte" class="inactif">
 		<p>carte a completer</p>
+
+		<div>
+			<input type="reset" value="Rénitialiser"/>
+			<input type="submit" value="Valider" />
+		</div>
 	</section>
 
 </body>

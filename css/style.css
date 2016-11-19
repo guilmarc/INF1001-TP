@@ -82,4 +82,32 @@ td:nth-child(3n + 1) {
 	display: none;
 }
 
+/* formatage du formulaire*/
+
+label {
+	float: left;
+	font-weight: bold;
+	width:150px;
+	height: 2em;
+	clear: both;
+}
+
+input[type!=input]{
+	float: left;
+	clear: both;
+}
+
+form div {
+	clear: both;
+}
+/* permet de supprimer l'espace entre le titre et le form
+form{
+	position: relative;
+	top: -60px;
+}
+*/
+#motiv{
+	height : 150px;
+}
+
 

@@ -13,7 +13,7 @@ $(document).ready(function animationMenu() {
 
     $('#boutonInscription').click(function(){
         $('section').filter(':visible').slideUp(500,function(){
-            $("#inscription").show();
+            $("#inscription").slideDown();
         });
     });
 

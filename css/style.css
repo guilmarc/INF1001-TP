@@ -14,6 +14,7 @@ h1 {
 	line-height: 100px;
 	padding-right:10px;
 	float:right;
+	/*noinspection CssNoGenericFontName*/
 	font-family: "Yatra One";
 }
 
@@ -27,13 +28,13 @@ nav ul {
 	list-style-type: none;
 	border: solid black 1px;
 	border-radius: 5px;
-	margin-top: 0px;
-	padding-left:0px;
+	margin-top: 0;
+	padding-left:0;
 	cursor:pointer;
 }
 
 nav ul li {
-	margin-left: 0px;
+	margin-left: 0;
 	border-bottom: solid black 1px;
 	padding: 10px;
 }
@@ -56,6 +57,11 @@ section {
 	margin-top: 10px;
 }
 
+#inscription{
+	/*height: 430px;*/
+	height: 45%;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -67,6 +73,7 @@ table, th, td {
 
 th, td {
 	padding: 5px;
+	height: 20px;
 }
 
 th {
@@ -76,6 +83,13 @@ th {
 
 td:nth-child(3n + 1) {
 	text-align: center;
+}
+
+/* classe qui fait un fond gris au bouton de la section active*/
+.active{
+	color:white;
+	background-color: darkgray;
+	font-weight:bold;
 }
 
 .inactif{
@@ -92,22 +106,29 @@ label {
 	clear: both;
 }
 
-input[type!=input]{
+/*input[type=submit],input[type=reset]{*/
+input:not([type=text]){
+	margin: 5px;
 	float: left;
-	clear: both;
+	clear: right;
 }
 
 form div {
 	clear: both;
 }
-/* permet de supprimer l'espace entre le titre et le form
+
+/* permet de supprimer l'espace entre le titre et le form*/
 form{
 	position: relative;
-	top: -60px;
+	top: -40px;
 }
-*/
-#motiv{
-	height : 150px;
+
+/* formatage de la carte*/
+#map {
+	 width: 100%;
+	 height: 400px;
+	 background-color: ghostwhite;
 }
+
 
 

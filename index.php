@@ -1,5 +1,7 @@
 <?php
 
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
 
 session_start();
 
@@ -11,11 +13,7 @@ if(!isset($_SESSION["lang"])){
 }
 else{
     $flag = ($_SESSION["lang"]== "Fr")?"fr":"en";
-    // On ajoute le "en" ou "fr" de $flag pour aller chercher le bon dictionnaire
-    // on l'assigne a lavairable $dico
     $locales  = $_SESSION["locales"];
-
-    //Maintenant on peut prendre $dico pour toute nos valeures
 }
 
 ?>
@@ -38,11 +36,15 @@ else{
 
 <body><!-- page content -->
 	<header>
+
 		<img src="images/logo.jpg" alt="logo UQTR"/>
 		<h1 id="titre"><?php echo $locales["title_01"][$flag] ;?></h1>
-        <form  class=""  action="switch_locale.php" method="GET" >
-            <input type="submit" value="<?php echo $locales["language"][$flag]; ?>">
+
+        <form id="language" action="switch_locale.php" method="GET" >
+            <input type="image" src="/images/<?php echo $flag; ?>.png" width=40 height="25">
         </form>
+
+
 	</header>
 
 	<nav><!--Menu-->
@@ -120,7 +122,7 @@ else{
 	<section id="inscription" class="inactif"> <!-- section contenant l'inscription-->
 		<h3><?php echo $locales["form_01"][$flag]; ?></h3>
 
-		<form class="inactif" method="post" onsubmit="return false" >
+		<form class="inactif" method="post" action="server.php" >
 
 			<div>
 				<label for="lastname"><?php echo $locales["form_02"][$flag]; ?></label>
@@ -133,31 +135,26 @@ else{
 			</div>
 
 			<div>
-				<label for="ddn"><?php echo $locales["form_04"][$flag]; ?></label>
-				<input id="ddn" type="text" name="ddn" placeholder ="aaaa-mm-jj"/>
+				<label for="birthdate"><?php echo $locales["form_04"][$flag]; ?></label>
+				<input id="birthdate" type="text" name="birthdate" placeholder ="aaaa-mm-jj"/>
 			</div>
 
 			<div>
 				<label><?php echo $locales["form_05"][$flag]; ?></label>
-				<input type="radio" name="sex" checked value="male"/><?php echo $locales["form_05a"][$flag]; ?>
-				<input type="radio" name="sex" value="female"/><?php echo $locales["form_05b"][$flag]; ?>
+				<input type="radio" name="sex" checked value=0 title="male"/><?php echo $locales["form_05a"][$flag]; ?>
+				<input type="radio" name="sex" value=1 title="female"/><?php echo $locales["form_05b"][$flag]; ?>
 			</div>
 
 			<div>
-				<label for="choixActivite"><?php echo $locales["form_09"][$flag]; ?></label>
-				<select id="choixActivite" name="activite">
-					<option value="badminton">Badminton</option>
-					<option value="echecs">Échecs</option>
-					<option value="kayak">Kayak</option>
-					<option value="natation">Natation</option>
-					<option value="randonnee">Randonnée</option>
-					<option value="velo">Vélo</option>
+				<label for="activityID"><?php echo $locales["form_09"][$flag]; ?></label>
+				<select id="activityID" name="activityID">
+                    <?php include "activity_list.php" ?>
 				</select>
 			</div>
 
 			<div>
-				<label for="motiv"><?php echo $locales["form_06"][$flag]; ?></label>
-				<textarea id="motiv" rows="8" cols="50" name="motivation" ></textarea>
+				<label for="motivation"><?php echo $locales["form_06"][$flag]; ?></label>
+				<textarea id="motivation" rows="8" cols="50" name="motivation" ></textarea>
 			</div>
 
 			<div>

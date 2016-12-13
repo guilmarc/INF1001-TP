@@ -40,3 +40,6 @@ Thumbs.db
 .sass-cache/
 .codekit-config.json
 config.codekit
+.idea/workspace.xml
+
+.idea/workspace.xml

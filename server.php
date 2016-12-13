@@ -16,8 +16,7 @@ $sql = "INSERT INTO member (fullname, dob, sex, activityid, motivation) VALUES (
 if ($connection->query($sql) === TRUE) {
     echo "L'activité a été enregistrée avec succès dans le système.  Appuyez sur précédent pour revenir en arrière";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $sql . "<br>" . $connection->error;
 }
 
 $connection->close();
-?>

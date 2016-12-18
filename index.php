@@ -41,7 +41,7 @@ else{
 		<h1 id="titre"><?php echo $locales["title_01"][$flag] ;?></h1>
 
         <form id="language" action="switch_locale.php" method="GET" >
-            <input type="image" src="/images/<?php echo $flag; ?>.png" width=40 height="25">
+            <input type="image" src="images/<?php echo $flag; ?>.png" width=40 height="25">
         </form>
 
 
@@ -70,6 +70,14 @@ else{
 		<p>Les différentes activités des groupes sont sous la responsabilité de professionnels. Il s'agit de passionnés du domaine qui vous ferons découvrir des pans inédits de vos loisirs préférés.  Qu'attendez-vous... ? Rejoidnez-nous !</p>
 
 		<h3>Liste des activités disponibles</h3>
+
+		<!--champ de recherche-->
+		<form  id="recherche" action="recherche2.php" method="post"  >
+			<div>
+				<input id=search type="text" name="search"/>
+			</div>
+
+		</form>
 
 		<table>
 			<tr>

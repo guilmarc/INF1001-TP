@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 09 Décembre 2016 à 04:23
+-- Généré le :  Dim 18 Décembre 2016 à 22:44
 -- Version du serveur :  5.7.14
 -- Version de PHP :  5.6.25
 
@@ -79,7 +79,9 @@ INSERT INTO `dictionary` (`id`, `key`, `en`, `fr`) VALUES
 (15, 'form_08', 'Validate', 'Valider'),
 (16, 'table_01', 'Activity', 'Activité'),
 (17, 'table_02', 'Responsible', 'Responsable'),
-(18, 'table_03', 'Inscriptions', 'Nombre d\'inscrits');
+(18, 'table_03', 'Inscriptions', 'Nombre d\'inscrits'),
+(19, 'form_09', 'Motivation', 'Motivation'),
+(20, 'map', 'Map', 'Carte');
 
 -- --------------------------------------------------------
 
@@ -107,6 +109,18 @@ CREATE TABLE `supervisor` (
   `fullname` varchar(80) NOT NULL,
   `activityid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `supervisor`
+--
+
+INSERT INTO `supervisor` (`id`, `fullname`, `activityid`) VALUES
+(1, 'Daniel Lefevbre', 1),
+(2, 'Emilie Simard', 2),
+(3, 'Josée Coté', 3),
+(4, 'Michel Provencher', 4),
+(5, 'Catherine Pelletier', 5),
+(6, 'Jean-Yves Surroy', 6);
 
 --
 -- Index pour les tables exportées
@@ -149,7 +163,7 @@ ALTER TABLE `activity`
 -- AUTO_INCREMENT pour la table `dictionary`
 --
 ALTER TABLE `dictionary`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT pour la table `member`
 --
@@ -159,7 +173,7 @@ ALTER TABLE `member`
 -- AUTO_INCREMENT pour la table `supervisor`
 --
 ALTER TABLE `supervisor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

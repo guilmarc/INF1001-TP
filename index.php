@@ -36,7 +36,7 @@ else{
 
 <body><!-- page content -->
 	<header>
-op09
+
 		<img src="images/logo.jpg" alt="logo UQTR"/>
 		<h1 id="titre"><?php echo $locales["title_01"][$flag] ;?></h1>
 

@@ -119,7 +119,8 @@ input:not([type=text]){
 /* permet de supprimer l'espace entre le titre et le form*/
 #inscription{
 	position: relative;
-	top: -40px;
+	/*top: -40px;*/
+	height: 450px;
 }
 
 /* formatage de la carte*/
@@ -137,6 +138,9 @@ input:not([type=text]){
 }
 
 #recherche input{
+	float: right;
+	padding-bottom: 5px;
+
 	border-top:thin solid  #e5e5e5;
 	border-right:thin solid #e5e5e5;
 	border-bottom:0;

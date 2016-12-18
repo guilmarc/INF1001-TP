@@ -1,11 +1,12 @@
 window.onload = function() {
     // au demarrage, on affiche les données du tableau en ordre de #.
-    remplirTableau("#");
+    //remplirTableau("#");
 };
 
 // fonction qui modifie l'affichage du tableau selon la colonne cliquée.
 $(document).ready(function() {
     $('th').on("click",function choixTri () {
+        alert("tri");
         viderTableau();
         remplirTableau(event.target.id);          // rempli le tableau selon la colomne cliquée
     });

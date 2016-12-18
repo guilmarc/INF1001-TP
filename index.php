@@ -30,8 +30,9 @@ else{
 	<link rel="icon" href="./favicon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="application/javascript" src="./javascript/menu.js"></script>
-	<script type="application/javascript" src="./javascript/tableau.js"></script>
-	<script type="application/javascript" src="./javascript/formulaire.js"></script>
+	<script type="application/javascript" src="./javascript/recherche.js"></script>
+	<script type="application/javascript" src="./javascript/formulaire.js"></script><!--
+	<script type="application/javascript" src="./javascript/tableau.js"></script>-->
 </head>
 
 <body><!-- page content -->
@@ -72,56 +73,21 @@ else{
 		<h3>Liste des activités disponibles</h3>
 
 		<!--champ de recherche-->
-		<form  id="recherche" action="recherche2.php" method="post"  >
+		<form  id="recherche"  method="post"  >
 			<div>
 				<input id=search type="text" name="search"/>
 			</div>
 
 		</form>
 
-		<table>
+		<table id="table">
 			<tr>
 				<th id="#">#</th>
 				<th id="activite"><?php echo $locales["table_01"][$flag]; ?></th>
 				<th id="responsable"><?php echo $locales["table_02"][$flag]; ?></th>
 				<th id="nombre"><?php echo $locales["table_03"][$flag]; ?></th>
 			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
+
 		</table>
 
 	</section>

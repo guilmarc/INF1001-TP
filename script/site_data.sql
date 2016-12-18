@@ -57,7 +57,7 @@ CREATE TABLE `dictionary` (
 
 INSERT INTO `dictionary` (`id`, `key`, `en`, `fr`) VALUES
 (1, 'menu_01', 'Home', 'Accueil'),
-(2, 'menu_02', 'Subscribe', 'Inscription'),
+(2, 'menu_02', 'Subscribe', 'S\'inscrire'),
 (3, 'menu_03', 'Locate activity', 'Localiser une activité'),
 (4, 'title_01', 'Leisure for students', 'Loisir pour les étudiants !'),
 (5, 'menu_03', 'Locate activity', 'Localiser une activité'),
@@ -73,10 +73,7 @@ INSERT INTO `dictionary` (`id`, `key`, `en`, `fr`) VALUES
 (15, 'form_08', 'Validate', 'Valider'),
 (16, 'table_01', 'Activity', 'Activité'),
 (17, 'table_02', 'Responsible', 'Responsable'),
-(18, 'table_03', 'Inscriptions', 'Nombre inscriptions'),
-(19, 'language', 'FR', 'EN'),
-(20, 'form_09', 'Activity', 'Activités'),
-(21, 'map', 'Map', 'Carte');
+(18, 'table_03', 'Inscriptions', 'Nombre d\'inscrits');
 
 -- --------------------------------------------------------
 

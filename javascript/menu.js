@@ -4,7 +4,7 @@ $(document).ready(function animationMenu() {
     $('#boutonAccueil').on("click", function () {
         $('li').removeClass("active");
         $('#boutonAccueil').addClass("active");
-        $('form').addClass("inactif");
+        $('#inscription').addClass("inactif");
         $('section').filter(':visible').slideUp(500, function () {
             $("#accueil").slideDown();
         });
@@ -24,7 +24,7 @@ $(document).ready(function animationMenu() {
     $('#boutonCarte').on("click",function () {
         $('li').removeClass("active");
         $('#boutonCarte').addClass("active");
-        $('form').addClass("inactif");
+        $('#inscription').addClass("inactif");
         $('section').filter(':visible').slideUp(500, function () {
             $("#carte").slideDown(function initMap() {
                 var myLatlng = new google.maps.LatLng(46.3938, -72.6534);

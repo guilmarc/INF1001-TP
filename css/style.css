@@ -27,13 +27,13 @@ nav ul {
 	list-style-type: none;
 	border: solid black 1px;
 	border-radius: 5px;
-	margin-top: 0px;
-	padding-left:0px;
+	margin-top: 0;
+	padding-left:0;
 	cursor:pointer;
 }
 
 nav ul li {
-	margin-left: 0px;
+	margin-left: 0;
 	border-bottom: solid black 1px;
 	padding: 10px;
 }
@@ -56,6 +56,11 @@ section {
 	margin-top: 10px;
 }
 
+#inscription{
+	/*height: 430px;*/
+	height: 45%;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -67,6 +72,7 @@ table, th, td {
 
 th, td {
 	padding: 5px;
+	height: 20px;
 }
 
 th {
@@ -77,3 +83,74 @@ th {
 td:nth-child(3n + 1) {
 	text-align: center;
 }
+
+/* classe qui fait un fond gris au bouton de la section active*/
+.active{
+	color:white;
+	background-color: darkgray;
+	font-weight:bold;
+}
+
+.inactif{
+	display: none;
+}
+
+/* formatage du formulaire*/
+
+#inscription label {
+	float: left;
+	font-weight: bold;
+	width:150px;
+	height: 2em;
+	clear: both;
+}
+
+/*input[type=submit],input[type=reset]{*/
+input:not([type=text]){
+	margin: 5px;
+	float: left;
+	clear: right;
+}
+
+#inscription div {
+	clear: both;
+}
+
+/* permet de supprimer l'espace entre le titre et le form*/
+#inscription{
+	position: relative;
+	top: -40px;
+}
+
+/* formatage de la carte*/
+#map {
+	 width: 100%;
+	 height: 400px;
+	 background-color: ghostwhite;
+}
+
+/* formatage du champ recherche*/
+
+#recherche{
+	float: right;
+	padding-bottom: 5px;
+}
+
+#recherche input{
+	border-top:thin solid  #e5e5e5;
+	border-right:thin solid #e5e5e5;
+	border-bottom:0;
+	border-left:thin solid  #e5e5e5;
+	box-shadow:0px 1px 1px 1px #e5e5e5;
+	float:left;
+	height:17px;
+	margin:.8em 0 0 .5em;
+	outline:0;
+	padding:.4em 0 .4em .6em;
+	width:183px;
+	background-image: url("../images/loupe.png");
+	background-position: right ;
+	background-repeat: no-repeat;
+}
+
+

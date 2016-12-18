@@ -74,6 +74,9 @@ INSERT INTO `dictionary` (`id`, `key`, `en`, `fr`) VALUES
 (16, 'table_01', 'Activity', 'Activité'),
 (17, 'table_02', 'Responsible', 'Responsable'),
 (18, 'table_03', 'Inscriptions', 'Nombre d\'inscrits');
+(19, 'language', 'FR', 'EN'),		
+(20, 'form_09', 'Activity', 'Activités'),		
+(21, 'map', 'Map', 'Carte');
 
 -- --------------------------------------------------------
 

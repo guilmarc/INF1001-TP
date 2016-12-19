@@ -47,7 +47,7 @@ else
 
 $r = $connection->query($sql);
 $retour = array();
-while($row = $r->fetch_assoc()){
+while($row = $r->fetch_row()){
     $retour[] = $row;
 }
 

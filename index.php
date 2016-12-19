@@ -16,6 +16,8 @@ else{
     $locales  = $_SESSION["locales"];
 }
 
+
+
 ?>
 
 
@@ -24,15 +26,14 @@ else{
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Celine Dupont, Marco Guilmette, Leonnel Noundou">
-	<title>TP1</title>
+	<title>TP3</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
 	<link rel="icon" href="./favicon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="application/javascript" src="./javascript/menu.js"></script>
 	<script type="application/javascript" src="./javascript/recherche.js"></script>
-	<script type="application/javascript" src="./javascript/formulaire.js"></script><!--
-	<script type="application/javascript" src="./javascript/tableau.js"></script>-->
+	<script type="application/javascript" src="./javascript/formulaire.js"></script>
 </head>
 
 <body><!-- page content -->
@@ -73,12 +74,9 @@ else{
 		<h3>Liste des activités disponibles</h3>
 
 		<!--champ de recherche-->
-		<form  id="recherche"  method="post"  >
-			<div>
+			<div id="recherche">
 				<input id=search type="text" name="search"/>
 			</div>
-
-		</form>
 
 		<table id="table">
 			<tr>

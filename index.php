@@ -16,17 +16,6 @@ else{
     $locales  = $_SESSION["locales"];
 }
 
-if(!isset($_SESSION["order"])){
-	$_SESSION["order"] = "ORDER BY activity.id";
-
-}
-
-if(!isset($_SESSION["search"])){
-	$_SESSION["search"] = "";
-
-}
-
-
 ?>
 
 

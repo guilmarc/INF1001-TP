@@ -13,6 +13,8 @@ if($connection->connect_error){
     die();
 }
 
+$_SESSION["search"]=$_POST["key"];
+
 if(isset($_POST) && isset($_POST["key"]))
 {
     if($_POST["key"]!="")
@@ -21,6 +23,7 @@ if(isset($_POST) && isset($_POST["key"]))
           JOIN supervisor ON activity.id=supervisor.activityid
           LEFT JOIN member ON (member.activityid = activity.id) 
           WHERE activityname LIKE '".$_POST["key"]."%'";
+
     }
     else
     {
@@ -29,6 +32,7 @@ if(isset($_POST) && isset($_POST["key"]))
         LEFT JOIN activity ON (activity.id = supervisor. activityid) 
         LEFT JOIN member ON (member.activityid = activity.id) 
         GROUP BY activity.id ";
+
     }
 }
 else
@@ -46,6 +50,6 @@ $retour = array();
 while($row = $r->fetch_assoc()){
     $retour[] = $row;
 }
-//echo $retour
+
 echo  json_encode($retour);
 ?>

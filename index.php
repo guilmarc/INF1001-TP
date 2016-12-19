@@ -16,6 +16,17 @@ else{
     $locales  = $_SESSION["locales"];
 }
 
+if(!isset($_SESSION["order"])){
+	$_SESSION["order"] = "ORDER BY activity.id";
+
+}
+
+if(!isset($_SESSION["search"])){
+	$_SESSION["search"] = "";
+
+}
+
+
 ?>
 
 
@@ -24,7 +35,7 @@ else{
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Celine Dupont, Marco Guilmette, Leonnel Noundou">
-	<title>TP1</title>
+	<title>TP3</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
 	<link rel="icon" href="./favicon.png">
@@ -73,12 +84,12 @@ else{
 		<h3>Liste des activités disponibles</h3>
 
 		<!--champ de recherche-->
-		<form  id="recherche"  method="post"  >
-			<div>
+		<!--<form  id="recherche"  method="post"  >-->
+			<div id="recherche">
 				<input id=search type="text" name="search"/>
 			</div>
 
-		</form>
+		<!--</form>-->
 
 		<table id="table">
 			<tr>

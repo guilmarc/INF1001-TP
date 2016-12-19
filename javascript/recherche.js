@@ -30,13 +30,16 @@ function loadData(motsaisi){
 };
 
 function insert(data){
-    if(data[0].id!=null){
+
+    if(data[0][0]!=null){
         for(i = 0; i < data.length; i++) {
-            $("#table").append("<tr>" + "<td>" + data[i].id + "</td>" +
-                "<td>" + data[i].activityname + "</td>" +
-                "<td>" + data[i].fullname + "</td>" +
-                "<td>" + data[i].count + "</td>" +
+            $("#table").append("<tr>" + "<td>" + data[i][0] + "</td>" +
+                "<td>" + data[i][1] + "</td>" +
+                "<td>" + data[i][2]+ "</td>" +
+                "<td>" + data[i][3]  + "</td>" +
                 "</tr>");
         }
+
+
     }
 }

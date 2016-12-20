@@ -1,19 +1,15 @@
 <?php
 
-//include "connection.php";
+include "connection.php";
 
-$user ="root";
-$password="";
-$dbname = "site";
-$urldb = "localhost";
-$connection = new mysqli($urldb,$user,$password,$dbname);
-$connection->set_charset("utf8");
-if($connection->connect_error){
-    echo $connection->connect_error;
-    die();
+if (!$connection->set_charset("utf8")) {
+    printf("Erreur lors du chargement du jeu de caractères utf8 : %s\n", $connection->error);
+    exit();
+} else {
+    $connection->set_charset("utf8");
 }
 
-$_SESSION["search"]=$_POST["key"];
+
 
 if(isset($_POST) && isset($_POST["key"]))
 {
@@ -46,10 +42,9 @@ else
 
 
 $r = $connection->query($sql);
-$retour = array();
+$ret = array();
 while($row = $r->fetch_row()){
-    $retour[] = $row;
+    $ret[] = $row;
 }
 
-echo  json_encode($retour);
-?>
+echo  json_encode($ret);

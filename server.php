@@ -21,4 +21,4 @@ if ($connection->query($sql) === TRUE) {
 
 $connection->close();
 
-?>
+

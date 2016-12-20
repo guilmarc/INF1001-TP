@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 
 function viderTableau(){
-    ("#table td").not("#th").remove();
+    $("#table td").not("#th").remove();
 }
 
 function loadData(motsaisi){

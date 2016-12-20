@@ -3,7 +3,7 @@
 include "connection.php";
 
 if (!$connection->set_charset("utf8")) {
-    printf("Erreur lors du chargement du jeu de caractères utf8 : %s\n", $mysqli->error);
+    printf("Erreur lors du chargement du jeu de caractères utf8 : %s\n", $connection->error);
     exit();
 } else {
     //  printf("Jeu de caractères courant : %s\n", $mysqli->character_set_name());
@@ -30,4 +30,3 @@ while ($row = $result->fetch_array(MYSQLI_BOTH)) {
 $_SESSION["locales"]= $dictionary;
 $connection->close();
 
-?>

@@ -3,16 +3,15 @@ $(document).ready(function () {
     loadData("");
 
     $('#search').keyup(function(){
-        $entry=this.value;
         viderTableau();
-        loadData($entry);
+        loadData(this.value);
     });
 
 });
 
 
 function viderTableau(){
-    $("#table td").not("#th").remove();
+    ("#table td").not("#th").remove();
 }
 
 function loadData(motsaisi){
@@ -27,12 +26,12 @@ function loadData(motsaisi){
             alert(e);
         }
     });
-};
+}
 
 function insert(data){
 
     if(data[0][0]!=null){
-        for(i = 0; i < data.length; i++) {
+        for(var i = 0; i < data.length; i++) {
             $("#table").append("<tr>" + "<td>" + data[i][0] + "</td>" +
                 "<td>" + data[i][1] + "</td>" +
                 "<td>" + data[i][2]+ "</td>" +

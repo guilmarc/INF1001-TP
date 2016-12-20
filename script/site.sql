@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 18 Décembre 2016 à 22:44
+-- Généré le :  Mar 20 Décembre 2016 à 18:25
 -- Version du serveur :  5.7.14
 -- Version de PHP :  5.6.25
 
@@ -98,6 +98,14 @@ CREATE TABLE `member` (
   `motivation` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Contenu de la table `member`
+--
+
+INSERT INTO `member` (`id`, `fullname`, `dob`, `sex`, `activityid`, `motivation`) VALUES
+(1, 'Celine Dupont', '0000-00-00', 0, 1, 'tse'),
+(2, 'Bob Royer', '1981-09-05', 0, 3, 's');
+
 -- --------------------------------------------------------
 
 --
@@ -168,7 +176,7 @@ ALTER TABLE `dictionary`
 -- AUTO_INCREMENT pour la table `member`
 --
 ALTER TABLE `member`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `supervisor`
 --

@@ -138,21 +138,17 @@ input:not([type=text]){
 }
 
 #recherche input{
-	float: right;/*
-	padding-bottom: 5px;*/
-
+	float: right;
 	border-top:thin solid  #e5e5e5;
 	border-right:thin solid #e5e5e5;
 	border-bottom:0;
 	border-left:thin solid  #e5e5e5;
 	box-shadow:0 1px 1px 1px #e5e5e5;
-	/*float:left;*/
 	height:17px;
 	margin:.8em 0 0 .5em;
 	outline:0;
 	padding:.4em 0 .4em .6em;
 	width:183px;
-
 	background: url("../images/loupe.png") no-repeat right;
 }
 

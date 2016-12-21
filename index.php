@@ -120,7 +120,7 @@ else{
 			</div>
 
 			<div>
-				<label for="activityID"><?php echo $locales["form_09"][$flag]; ?></label>
+				<label for="activityID"><?php echo $locales["table_01"][$flag]; ?></label>
 				<select id="activityID" name="activityID">
                     <?php include "activity_list.php" ?>
 				</select>

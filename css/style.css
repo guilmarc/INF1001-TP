@@ -97,12 +97,13 @@ td:nth-child(3n + 1) {
 
 /* formatage du formulaire*/
 
+#inscription label:first-child {
+	width:150px;
+	font-weight: bold;
+}
 #inscription label {
 	float: left;
-	font-weight: bold;
-	width:150px;
 	height: 2em;
-	clear: both;
 }
 
 /*input[type=submit],input[type=reset]{*/

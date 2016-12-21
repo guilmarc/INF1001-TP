@@ -25,7 +25,8 @@ else{
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="Celine Dupont, Marco Guilmette, Leonnel Noundou">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <meta name="author" content="Celine Dupont, Marco Guilmette, Leonnel Noundou">
 	<title>TP3</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
@@ -113,8 +114,10 @@ else{
 
 			<div>
 				<label><?php echo $locales["form_05"][$flag]; ?></label>
-				<input type="radio" name="sex" checked value=0 title="male"/><?php echo $locales["form_05a"][$flag]; ?>
-				<input type="radio" name="sex" value=1 title="female"/><?php echo $locales["form_05b"][$flag]; ?>
+				<input type="radio" name="sex" checked value=0 title="male"/>
+				<label for="male"><?php echo $locales["form_05a"][$flag]; ?></label>
+				<input type="radio" name="sex" value=1 title="female"/>
+				<label for="female"><?php echo $locales["form_05b"][$flag]; ?></label>
 			</div>
 
 			<div>

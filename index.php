@@ -25,8 +25,7 @@ else{
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-    <meta name="author" content="Celine Dupont, Marco Guilmette, Leonnel Noundou">
+  	  <meta name="author" content="Celine Dupont, Marco Guilmette, Leonnel Noundou">
 	<title>TP3</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
